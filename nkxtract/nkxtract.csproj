@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>nkxtract</RootNamespace>
     <AssemblyName>nkxtract</AssemblyName>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFramework>net5.0</TargetFramework>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
