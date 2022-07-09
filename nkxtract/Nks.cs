@@ -33,7 +33,7 @@ namespace nkxtract
 
   class KeyLoader
   {
-    const string prefix = "HKEY_LOCAL_MACHINE\\Software\\Native Instruments\\Kontakt Factory Library\\";
+    const string prefix = "HKEY_LOCAL_MACHINE\\Software\\Native Instruments\\";
     public static Key LoadKey(string name)
     {
       // Super secret obfuscation:

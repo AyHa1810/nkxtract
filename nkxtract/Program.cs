@@ -31,13 +31,18 @@ namespace nkxtract
     {
       if(args.Length != 2)
       {
-        Console.WriteLine("Usage: nkxtract.exe path/to/file.nkx path/to/output/dir");
+        Console.WriteLine("Usage: nkxtract.exe 'path/to/file.nkx' 'path/to/output/dir' 'regedit key (default: Release)'");
         return;
       }
       string inputFile = args[0];
       string outputDir = args[1];
+      var key = KeyLoader.LoadKey(args[2]);
 
-      var key = KeyLoader.LoadKey("Release");
+      if(!key)
+      {
+        var key = KeyLoader.LoadKey("Release");
+      }
+
       if (key == null)
       {
         Console.WriteLine("Couldn't load decryption key: No key found in registry");
