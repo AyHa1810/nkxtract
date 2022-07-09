@@ -46,7 +46,7 @@ namespace nkxtract
       var key = KeyLoader.LoadKey(regkey);
       if (key == null)*/
       
-      key = KeyLoader.LoadKey("Kontakt Factory Library");
+      var key = KeyLoader.LoadKey("Kontakt Factory Library");
       
 
       if (key == null)
