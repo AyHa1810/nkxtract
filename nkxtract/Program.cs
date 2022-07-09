@@ -36,18 +36,18 @@ namespace nkxtract
       }
       string inputFile = args[0];
       string outputDir = args[1];
-      string regkey = args[2];
+      //string regkey = args[2];
 
       /*string key;
       if(args[2] != null){
         key = KeyLoader.LoadKey(args[2]);
       }
-      else*/
+      else
       var key = KeyLoader.LoadKey(regkey);
-      if (key == null)
-      {
-        key = KeyLoader.LoadKey("Release");
-      }
+      if (key == null)*/
+      
+      key = KeyLoader.LoadKey("Kontakt Factory Library");
+      
 
       if (key == null)
       {
