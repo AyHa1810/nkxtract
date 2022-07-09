@@ -1,5 +1,5 @@
 # nkxtract
-Download: [![Build status](https://ci.appveyor.com/api/projects/status/e6nddu08bte472a5?svg=true)](https://ci.appveyor.com/project/maxton/nkxtract)
+Download: [![Build status](https://ci.appveyor.com/api/projects/status/5ldraia956ukr9jl?svg=true)](https://ci.appveyor.com/project/AyHa1810/nkxtract)
 
 This is a tool to extract files from nkx archives (also known as monolith files).
 These files are used to hold the samples for Kontakt instruments.
