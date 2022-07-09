@@ -37,7 +37,7 @@ namespace nkxtract
       string inputFile = args[0];
       string outputDir = args[1];
 
-      var key = (string)null;
+      var key = 0;
       if(args[2] != null){
         key = KeyLoader.LoadKey(args[2]);
       }
@@ -46,7 +46,7 @@ namespace nkxtract
         key = KeyLoader.LoadKey("Release");
       }
 
-      if (key == null)
+      if (key == 0)
       {
         Console.WriteLine("Couldn't load decryption key: No key found in registry");
         return;
