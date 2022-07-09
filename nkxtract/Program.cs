@@ -29,20 +29,21 @@ namespace nkxtract
   {
     static void Main(string[] args)
     {
-      if(args.Length != 2)
+      if(args.Length < 2)
       {
         Console.WriteLine("Usage: nkxtract.exe 'path/to/file.nkx' 'path/to/output/dir' 'regedit key (default: Release)'");
         return;
       }
       string inputFile = args[0];
       string outputDir = args[1];
+      string regkey = args[2];
 
       /*string key;
       if(args[2] != null){
         key = KeyLoader.LoadKey(args[2]);
       }
       else*/
-      var key = KeyLoader.LoadKey(args[2]);
+      var key = KeyLoader.LoadKey(regkey);
       if (key == null)
       {
         key = KeyLoader.LoadKey("Release");
