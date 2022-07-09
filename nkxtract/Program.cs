@@ -37,7 +37,7 @@ namespace nkxtract
       string inputFile = args[0];
       string outputDir = args[1];
 
-      var key = new object();
+      var key = (string)null;
       if(args[2] != null){
         key = KeyLoader.LoadKey(args[2]);
       }
